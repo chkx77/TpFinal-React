@@ -1,0 +1,95 @@
+/* Fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Estilos globales */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7fafc; /* Fondo claro */
+  color: #2d3748; /* Color de texto oscuro */
+  font-family: 'Inter', sans-serif; /* Fuente principal */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #2b6cb0; /* Color para encabezados */
+}
+
+/* Tablas */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table th {
+  background-color: #4a90e2; /* Azul de la tabla */
+  color: white;
+  font-weight: 600;
+  border-bottom: 3px solid #4a90e2;
+}
+
+.table td {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+.table tr:hover {
+  background-color: #e2e8f0;
+}
+
+.table button {
+  padding: 6px 12px;
+  background: #e94e77;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table button:hover {
+  background: #d33b61;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table .actions {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.detailLink {
+  color: #4a90e2;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.detailLink:hover {
+  color: #2b6cb0;
+  text-decoration: underline;
+}

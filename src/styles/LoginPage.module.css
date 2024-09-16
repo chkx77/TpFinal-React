@@ -1,0 +1,100 @@
+/* LoginPage.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #00aaff, #003d6c); 
+  font-family: 'Inter', sans-serif; 
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+}
+
+.form:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo i {
+  font-size: 60px;
+  color: #00bfff;
+}
+
+h1 {
+  color: #003d6c;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #0056b3;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.inputContainer {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.inputContainer input {
+  width: calc(100% - 55px);
+  max-width: 320px;
+  padding: 14px 30px;
+  padding-left: 50px;
+  border: 1px solid #00aaff;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #003d6c;
+  background-color: #f0faff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+}
+
+.inputContainer input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 91, 185, 0.3);
+}
+
+.inputContainer .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #00aaff;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #003d6c;
+  transform: scale(1.05);
+}

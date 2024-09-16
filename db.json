@@ -1,0 +1,22 @@
+{
+  "empleados": [
+    {
+      "id": "1",
+      "nombre": "Juan Pérez",
+      "cargo": "Desarrollador",
+      "email": "juan@example.com"
+    },
+    {
+      "id": "8f94",
+      "nombre": "Matias Romero",
+      "cargo": "Cafetero",
+      "email": "matirom77@gmail.com"
+    },
+    {
+      "id": "09f2",
+      "nombre": "Lucas Bozza",
+      "cargo": "Desarrollador",
+      "email": "juan@example.com"
+    }
+  ]
+}
