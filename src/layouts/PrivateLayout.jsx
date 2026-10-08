@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Navbar from '../Components/Navbar';
-import styles from '../Styles/PrivateLayout.module.css';
+import Navbar from '../components/Navbar';
+import styles from '../styles/PrivateLayout.module.css';
 
 const PrivateLayout = () => {
   return (

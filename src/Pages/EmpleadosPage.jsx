@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import { api } from '../lib/api';
 import { Link } from 'react-router-dom';
-import styles from '../Styles/Empleados.module.css';
+import styles from '../styles/Empleados.module.css';
 
 const EmpleadosPage = () => {
   const [empleados, setEmpleados] = useState([]);
@@ -14,7 +14,7 @@ const EmpleadosPage = () => {
   useEffect(() => {
     const fetchEmpleados = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/empleados');
+        const response = await api.get('/empleados');
         setEmpleados(response.data);
       } catch (err) {
         setError('Error al cargar los datos');
@@ -39,7 +39,7 @@ const EmpleadosPage = () => {
     e.preventDefault();
     if (selectedEmpleado) {
       try {
-        await axios.put(`http://localhost:5000/empleados/${selectedEmpleado.id}`, formData);
+        await api.put(`/empleados/${selectedEmpleado.id}`, formData);
         const updatedEmpleados = empleados.map(emp =>
           emp.id === selectedEmpleado.id ? { ...emp, ...formData } : emp
         );
@@ -51,8 +51,8 @@ const EmpleadosPage = () => {
       }
     } else {
       try {
-        await axios.post('http://localhost:5000/empleados', formData);
-        const response = await axios.get('http://localhost:5000/empleados');
+        await api.post('/empleados', formData);
+        const response = await api.get('/empleados');
         setEmpleados(response.data);
         setFormData({ nombre: '', cargo: '', email: '' });
       } catch (err) {
@@ -68,7 +68,7 @@ const EmpleadosPage = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/empleados/${id}`);
+      await api.delete(`/empleados/${id}`);
       setEmpleados(empleados.filter(emp => emp.id !== id));
     } catch (err) {
       setError('Error al eliminar el empleado');
