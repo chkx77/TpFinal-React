@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../Contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 import styles from '../Styles/LoginPage.module.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -27,7 +27,7 @@ const LoginPage = () => {
           <i className="fas fa-user-circle"></i>
           <h1>Iniciar Sesión</h1>
         </div>
-        <p className={styles.description}>Ingrese sus credenciales para acceder al sistema.</p>
+        <p className={styles.description}>Demo académica: usuario admin y contraseña admin. Usá únicamente datos ficticios.</p>
         <form onSubmit={handleSubmit}>
           <div className={styles.inputContainer}>
             <i className={`fas fa-user ${styles.icon}`}></i>

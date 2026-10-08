@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from './Contexts/AuthContext';
-import Navbar from './Components/Navbar';
+import { AuthProvider } from './contexts/AuthContext';
+import Navbar from './components/Navbar';
 import LoginPage from './Pages/LoginPage';
 import HomePage from './Pages/HomePage';
-import EmpleadosPage from './pages/EmpleadosPage';
+import EmpleadosPage from './Pages/EmpleadosPage';
 import EmpleadoDetailPage from './Pages/EmpleadoDetalle';
-import PrivateRoute from './Components/PrivateRoute';
+import PrivateRoute from './components/PrivateRoute';
 
 const App = () => {
   return (

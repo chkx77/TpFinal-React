@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import { api } from '../lib/api';
 import styles from '../Styles/EmpleadoDetalle.module.css';
 import empleadoImage from '../Assets/empleado.png'; 
 
@@ -14,7 +14,7 @@ const EmpleadoDetailPage = () => {
   useEffect(() => {
     const fetchEmpleado = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/empleados/${id}`);
+        const response = await api.get(`/empleados/${id}`);
         setEmpleado(response.data);
       } catch (err) {
         setError('Error al cargar los datos del empleado');
