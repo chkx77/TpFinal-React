@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { api } from '../lib/api';
 import styles from '../styles/EmpleadoDetalle.module.css';
-import empleadoImage from '../Assets/empleado.png'; 
+import empleadoImage from '../assets/empleado.png'; 
 
 const EmpleadoDetailPage = () => {
   const { id } = useParams();
