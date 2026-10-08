@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from '../Styles/Navbar.module.css';
+import styles from '../styles/Navbar.module.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { useAuth } from '../contexts/AuthContext';
 

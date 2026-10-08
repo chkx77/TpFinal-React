@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import styles from '../Styles/LoginPage.module.css';
+import styles from '../styles/LoginPage.module.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const LoginPage = () => {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { api } from '../lib/api';
 import { Link } from 'react-router-dom';
-import styles from '../Styles/Empleados.module.css';
+import styles from '../styles/Empleados.module.css';
 
 const EmpleadosPage = () => {
   const [empleados, setEmpleados] = useState([]);

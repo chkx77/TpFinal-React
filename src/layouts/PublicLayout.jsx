@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import styles from '../Styles/PublicLayout.module.css';
+import styles from '../styles/PublicLayout.module.css';
 
 const PublicLayout = () => {
   return (

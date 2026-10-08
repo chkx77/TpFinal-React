@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import styles from '../Styles/HomePage.module.css';
+import styles from '../styles/HomePage.module.css';
 
 const HomePage = () => {
   const [empleados, setEmpleados] = useState([]);
